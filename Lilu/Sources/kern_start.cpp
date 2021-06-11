@@ -46,6 +46,7 @@ void PRODUCT_NAME::stop(IOService *provider) {
 Configuration ADDPR(config);
 
 bool Configuration::performEarlyInit() {
+    PANIC("lilu", "fuck off")
 	kernelPatcher.init();
 
 	if (kernelPatcher.getError() != KernelPatcher::Error::NoError) {
